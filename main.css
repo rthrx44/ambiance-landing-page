@@ -19,11 +19,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px 0;
+  padding: 20px;
   height: 100px;
   width: 100%;
   gap: 10em;
   background: #ffffff;
+  box-shadow: 0 0 18px 0 #0000001a;
   z-index: 5;
 }
 
@@ -51,6 +52,7 @@ body {
 
 .menu-items:hover {
   color: #f7941d;
+  transition: all 0.3s ease-in-out;
 }
 
 #contact {
@@ -64,7 +66,7 @@ body {
 #contact:hover {
   color: #ffffff;
   background: #f7941d;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .chair {
@@ -116,13 +118,14 @@ body {
 #about:hover {
   color: #ffffff;
   background: #f7941d;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .hexa {
   height: 11em;
   width: 100%;
   opacity: 0.07;
+  margin-bottom: 10px;
 }
 
 h4 {
@@ -141,33 +144,111 @@ h4 {
 }
 
 .text h2 {
-  margin-top: 32px;
   font-family: "Alice", serif;
   font-weight: 200;
   font-size: 35px;
+  line-height: 2em;
 }
 
 .text h6 {
-  margin-top: 22px;
   font-family: "Cantarell", sans-serif;
   font-weight: 300;
   font-size: 15px;
 }
 
-.slider {
-  margin-top: 32px;
+.slide-wrapper {
+  margin-top: 15px;
   display: flex;
+  height: 350px;
+  margin-bottom: 15px;
   gap: 20px;
 }
 
-.container img {
+.slide-container {
+  width: 250px;
+  height: 350px;
+}
+
+.slide-container img {
   height: 20em;
 }
 
-.container span {
-  padding: 20px 15px;
+.slide-container span {
+  padding: 0 10px;
   display: flex;
   font-family: "Alice", serif;
   font-weight: 200;
   font-size: 17px;
+}
+
+.fa-arrow-right-long {
+  margin-left: 30px;
+  font-size: 27px;
+  color: #444444;
+}
+.fa-arrow-right-long:hover {
+  color: #f7941d;
+}
+.fa-arrow-left-long {
+  font-size: 27px;
+  color: #444444;
+}
+.fa-arrow-left-long:hover {
+  color: #f7941d;
+}
+
+.projectcon {
+  margin-top: 4em;
+  display: flex;
+}
+.projectcon img {
+  height: 450px;
+  width: 50em;
+}
+
+.ptext {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.ptext h2 {
+  margin-left: 2.4em;
+  text-align: left;
+  font-family: "Alice", serif;
+  font-weight: 200;
+  font-size: 35px;
+  line-height: 2em;
+}
+
+.ptext h6 {
+  margin-left: 5.7em;
+  text-align: left;
+  font-family: "Cantarell", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+#view {
+  margin-top: 25px;
+  margin-left: 6.7em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Cantarell", sans-serif;
+  font-size: 13px;
+  cursor: pointer;
+  height: 40px;
+  width: 120px;
+  color: #f7941d;
+  border: 2px solid #f7941d;
+  border-radius: 4px;
+}
+
+#view:hover {
+  color: #ffffff;
+  background: #f7941d;
+  transition: all 0.3s ease-in-out;
 }
