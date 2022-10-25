@@ -438,6 +438,10 @@ form {
   height: 80px;
 }
 
+textarea {
+  resize: none;
+}
+
 #submit {
   margin-top: 15px;
   display: flex;
